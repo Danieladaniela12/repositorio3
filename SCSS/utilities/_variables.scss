@@ -1,0 +1,8 @@
+&color-principal: black;
+@mixin flex{
+    display: flex;
+}
+
+%medidas{
+    gap: 5px;
+}
