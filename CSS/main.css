@@ -1,4 +1,7 @@
 @charset "UTF-8";
+body .menutdc, body .iconoscontacto {
+  gap: 5px; }
+
 body {
   background-color: burlywood; }
   body header {
@@ -6,33 +9,38 @@ body {
     grid-template-columns: 20% 20%;
     grid-template-rows: 10% 90%;
     background-image: linear-gradient(to bottom, bisque, burlywood);
-    border-botton: 4px solid brown; }
+    border-bottom: 4px solid brown; }
     body header #logoimg {
-      height: 50px; }
+      height: 90px; }
     body header nav {
+      display: flex;
       flex-direction: row;
       justify-content: left;
       list-style: none;
       flex-wrap: nowrap; }
-      body header nav li {
-        list-style: none;
-        padding: 3px;
-        margin: 7px;
-        background-color: bisque;
-        border: 1px solid brown;
-        text-transform: uppercase;
-        height: 35px;
-        transition: height 2s;
-        font-family: Verdana;
-        color: black;
-        text-decoration: none; }
-        body header nav li:hover {
-          font-style: italic;
-          height: 50px;
-          background-color: cornsilk; }
+      body header nav ul {
+        display: flex;
+        flex-direction: row; }
+        body header nav ul li {
+          list-style: none;
+          padding: 3px;
+          margin: 7px;
+          background-color: bisque;
+          border: 1px solid brown;
+          text-transform: uppercase;
+          height: 35px;
+          transition: height 2s;
+          font-family: Verdana;
+          color: black;
+          text-decoration: none; }
+          body header nav ul li:hover {
+            font-style: italic;
+            height: 50px;
+            color: white;
+            background-color: rgba(171, 98, 98, 0.518); }
   body .cafeteriafondo {
     background-size: cover;
-    height: 100%; }
+    width: 100%; }
   body .menutdc {
     max-width: 270px;
     justify-content: space-between;
@@ -56,6 +64,7 @@ body {
     width: 500px;
     margin-top: 2rem; }
   body .iconoscontacto {
+    display: flex;
     flex-direction: column;
     font-weight: bold;
     margin-top: 10px;
@@ -85,11 +94,21 @@ body {
     color: white;
     text-decoration: none; }
     body .footer a {
-      color: body .footer a color-principal; }
+      color: black; }
 
 @media screen and (max-width: 640px) {
   .cafeteriafotofondo {
-    height: 100vh; }
+    height: 100px; }
+  .nav2 {
+    margin-top: 45%;
+    margin-left: -20%;
+    margin-bottom: -65px; }
+  .header2 {
+    display: grid;
+    grid-template-areas: "logoimg" "nav";
+    grid-template-columns: 30%;
+    grid-template-rows: 10% 20%;
+    position: relative; }
   .menutdc {
     margin-left: 170px; }
   .imagenes {
@@ -101,15 +120,17 @@ body {
   .maincontacto {
     grid-template-columns: 40%; }
   .ubic {
-    align-items: center; }
+    align-items: center;
+    margin-left: 40px;
+    height: 250px;
+    width: 300px; }
   header {
     grid-template-columns: 50%;
     grid-template-rows: 25%; }
   nav {
     display: flex;
     flex-direction: column;
-    margin-bottom: -15px;
-    text-align: center; }
+    margin-bottom: -15px; }
   h3 {
     margin-top: 3rem;
     margin-bottom: -5rem; } }

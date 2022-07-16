@@ -7,9 +7,9 @@ body{
         grid-template-columns: 20% 20%;
         grid-template-rows: 10% 90%;
         background-image: linear-gradient(to bottom, bisque, burlywood);
-        border-botton: 4px solid brown;
+        border-bottom: 4px solid brown;
         #logoimg{
-            height: 50px;
+            height: 90px;
         }
         nav{
             @include flex;
@@ -17,6 +17,9 @@ body{
             justify-content: left;
             list-style: none;
             flex-wrap: nowrap;
+            ul{
+            display: flex;
+            flex-direction: row;
             li{
                 list-style:none;
                 padding: 3px;
@@ -32,14 +35,16 @@ body{
                 &:hover{
                     font-style: italic;
                     height: 50px;
-                    background-color: cornsilk;
+                    color: white;
+                    background-color: rgba(171, 98, 98, 0.518);
                 }
+            }
             }
         }
     }
     .cafeteriafondo{
         background-size: cover;
-        height:100%;
+        width:100%;
     }
 
     .menutdc{
@@ -117,9 +122,11 @@ body{
         color:white;
         text-decoration: none;
         a{
-            color:&color-principal;
+            color:$color-principal;
         }
     }
+
+    
 
 
 }
@@ -127,7 +134,25 @@ body{
 
 @media screen and (max-width:640px) {
     .cafeteriafotofondo{
-        height: 100vh;
+        height: 100px;
+    }
+
+
+    .nav2{
+        margin-top: 45%;
+        margin-left: -20%;
+        margin-bottom: -65px;
+    }
+
+    .header2{
+        display: grid;
+        grid-template-areas: 
+        "logoimg"
+        "nav";
+        grid-template-columns: 30%;
+        grid-template-rows: 10% 20%;
+        position:relative;
+        
     }
 
     .menutdc{
@@ -150,6 +175,9 @@ body{
 
     .ubic{
         align-items: center;
+        margin-left: 40px;
+        height: 250px;
+        width:300px;
     }
 
     header{
@@ -161,8 +189,8 @@ body{
         display: flex;
         flex-direction: column;
         margin-bottom: -15px;
-        text-align: center;
     }
+
 
     h3{
         margin-top: 3rem;
