@@ -42,6 +42,7 @@ body{
             }
         }
     }
+}
     .cafeteriafondo{
         background-size: cover;
         width:100%;
@@ -138,8 +139,7 @@ body{
 
 }
 
-
-@media screen and (max-width:640px) {
+@media (min-width:500px) and (max-width:640px) {
     .cafeteriafotofondo{
         height: 100px;
     }
@@ -207,6 +207,26 @@ body{
     .staff{
         height: -150px;
         width: -180px;
+    }
+
+}
+
+
+@media screen and (max-width:500px) {
+    
+    header{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 20%;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    li{
+        flex-direction: column;
     }
 
 }
