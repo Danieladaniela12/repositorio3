@@ -31,13 +31,15 @@ body {
           height: 35px;
           transition: height 2s;
           font-family: Verdana;
-          color: black;
-          text-decoration: none; }
+          color: black; }
           body header nav ul li:hover {
             font-style: italic;
             height: 50px;
-            color: white;
             background-color: rgba(171, 98, 98, 0.518); }
+          body header nav ul li a:link {
+            color: black; }
+          body header nav ul li a:visited {
+            color: #eaa717; }
   body .cafeteriafondo {
     background-size: cover;
     width: 100%; }
@@ -83,9 +85,6 @@ body {
     box-shadow: inset 0; }
   body .carousel {
     width: 50%; }
-  body .staff {
-    height: 50px;
-    width: 40px; }
   body .footer {
     background-color: grey;
     position: fixed;
@@ -102,7 +101,9 @@ body {
 
 @media (min-width: 500px) and (max-width: 640px) {
   .cafeteriafotofondo {
-    height: 100px; }
+    background-size: cover;
+    width: 100%;
+    height: 700px; }
   .nav2 {
     margin-top: 45%;
     margin-left: -20%;
@@ -137,18 +138,42 @@ body {
     margin-bottom: -15px; }
   h3 {
     margin-top: 3rem;
-    margin-bottom: -5rem; }
-  .staff {
-    height: -150px;
-    width: -180px; } }
+    margin-bottom: -5rem; } }
 
 @media screen and (max-width: 500px) {
-  header {
+  .cafeteriafotofondo {
+    background-size: cover;
+    width: 100%; }
+  .nav2 {
+    margin-top: 45%;
+    margin-left: -20%;
+    margin-bottom: -65px; }
+  .header2 {
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 20%; }
+    grid-template-areas: "logoimg" "nav";
+    grid-template-columns: 30%;
+    grid-template-rows: 10% 20%;
+    position: relative; }
+  ul {
+    display: flex;
+    flex-wrap: wrap; }
+  .imagenes {
+    flex-direction: column;
+    margin-left: 80px; }
+  .fotobeneficios {
+    margin-left: -30%;
+    margin-bottom: 3rem; }
+  .maincontacto {
+    grid-template-columns: 40%; }
+  .ubic {
+    align-items: center;
+    margin-left: 40px;
+    height: 200px;
+    width: 100px; }
+  header {
+    grid-template-columns: 50%;
+    grid-template-rows: 25%; }
   nav {
     display: flex;
-    flex-direction: column; }
-  li {
-    flex-direction: column; } }
+    flex-direction: column;
+    margin-bottom: -15px; } }
