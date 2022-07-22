@@ -53,7 +53,7 @@ body{
         
     }
 
-    .menutdc{
+    .menuTdc{
         max-width: 270px;
         justify-content: space-between;
         @extend %medidas;
@@ -79,13 +79,13 @@ body{
         margin-bottom: 3rem;
     }
     
-    .fotobeneficios{
+    .fotoBeneficios{
         height: 500px;
         width: 500px;
         margin-top: 2rem;
     }
 
-    .iconoscontacto{
+    .iconosContacto{
         @include flex;
         @extend %medidas;
         flex-direction: column;
@@ -98,7 +98,7 @@ body{
         margin-top: 20px;
     }
 
-    .maincontacto{
+    .mainContacto{
         display: grid;
         grid-template-rows: 50% 50%;
         grid-template-columns: 30% 20%;
@@ -113,11 +113,6 @@ body{
         text-decoration: none;
         box-shadow: inset 0;
     }
-    .carousel{
-        width:50%;
-    }
-
-
 
     .footer{
         background-color:grey;
@@ -140,8 +135,14 @@ body{
 
 }
 
+.carousel{
+    width:50%;
+    display: block;
+    margin: 0 auto;
+}
+
 @media (min-width:500px) and (max-width:640px) {
-    .cafeteriafotofondo{
+    .cafeteriaFotoFondo{
         background-size: cover;
         width:100%;
         height: 700px;
@@ -165,21 +166,24 @@ body{
         
     }
 
-    .menutdc{
+    .menuTdc{
         margin-left:170px;
     }
 
     .imagenes{
         flex-direction: column;
-        margin-left: 80px;
     }
 
-    .fotobeneficios{
-        margin-left: -30%;
+    .fotoBeneficios{
         margin-bottom: 3rem;
     }
 
-    .maincontacto{
+    .carousel {
+        width: 100%;
+        
+    }
+
+    .mainContacto{
         grid-template-columns: 40%;
     }
 
@@ -212,7 +216,7 @@ body{
 
 
 @media screen and (max-width:500px) {
-    .cafeteriafotofondo{
+    .cafeteriaFotoFondo{
         background-size: cover;
         width:100%;
     }
@@ -245,15 +249,17 @@ body{
 
     .imagenes{
         flex-direction: column;
-        margin-left: 80px;
     }
 
-    .fotobeneficios{
-        margin-left: -30%;
+    .fotoBeneficios{
         margin-bottom: 3rem;
     }
 
-    .maincontacto{
+    .carousel {
+        width: 100%;
+    }
+
+    .mainContacto{
         grid-template-columns: 40%;
     }
 
